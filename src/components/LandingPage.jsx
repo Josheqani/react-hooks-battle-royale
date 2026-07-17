@@ -107,10 +107,10 @@ export default function LandingPage() {
             key={battle.id}
             variants={cardVariants}
             whileHover="hover"
-            className="relative group"
+            className="relative group rounded-2xl"
           >
-            <Link to={`/battle/${battle.id}`}>
-              <div className={`bg-gradient-to-br ${battle.color} p-1 rounded-2xl`}>
+            <Link to={`/battle/${battle.id}`} className="block h-full">
+              <div className={`bg-gradient-to-br ${battle.color} p-1 rounded-2xl h-full`}>
                 <div className="bg-dark-card rounded-xl p-6 h-full relative overflow-hidden">
                   {/* Glow effect */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${battle.color} opacity-0 group-hover:opacity-20 transition-opacity duration-300`} />
