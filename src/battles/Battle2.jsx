@@ -203,8 +203,8 @@ export default function Battle2() {
                 unnecessary re-renders. Like keeping the recipe card instead of rewriting it each time.
               </p>
               <code className="block mt-2 bg-dark-bg p-2 rounded text-xs text-purple-400">
-                const fn = useCallback(() => {...}, [deps]);
-              </div>
+                {'const fn = useCallback(() => {...}, [deps]);'}
+              </code>
             </div>
           </div>
         </div>
